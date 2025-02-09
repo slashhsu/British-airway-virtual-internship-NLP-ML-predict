@@ -1,77 +1,62 @@
-# British Airways NLP & ML Prediction
+# Customer Insights & Predictive Modeling
 
 ## Overview
-This project leverages **Natural Language Processing (NLP)** and **Machine Learning (ML)** to analyze and predict customer insights for British Airways. The project is divided into two key areas:
-1. **Customer Sentiment Analysis** – Using NLP techniques to extract and classify sentiments from customer reviews.
-2. **Customer Buying Behavior Prediction** – Implementing machine learning models to understand key factors influencing booking decisions.
+This project focuses on analyzing customer reviews and predicting customer buying behavior using **Natural Language Processing (NLP)** and **Machine Learning (ML)**. The project is divided into two main tasks:
+1. **Web Scraping & Sentiment Analysis** – Extracting and analyzing customer reviews.
+2. **Predictive Modeling** – Identifying key factors influencing customer purchases.
 
 ---
 
-## 1. Customer Sentiment Analysis
+## 1. Web Scraping & Sentiment Analysis
 ### Data Insights
-By cleaning **1,000 customer reviews**, the dataset was divided into:
+By cleaning **1,000 customer reviews**, we categorized them into sentiment and subjectivity:
 - **Positive Reviews:** 480
 - **Negative Reviews:** 413
 - **Neutral Reviews:** 107
 
-Additionally, the subjectivity analysis classified:
+Subjectivity classification:
 - **Subjective Reviews:** 537
 - **Objective Reviews:** 463
 
 ### Preprocessing Steps:
 - **Text Cleaning** – Removing punctuation, special characters, and unnecessary elements.
 - **Tokenization** – Splitting text into individual words.
-- **Stopword Removal** – Filtering out common words that do not add meaning.
+- **Stopword Removal** – Filtering out common words.
 - **Stemming/Lemmatization** – Reducing words to their root forms.
-- **TF-IDF Vectorization** – Converting text into numerical features for model training.
+- **TF-IDF Vectorization** – Converting text into numerical features.
 
-![Data Preprocessing](https://github.com/slashhsu/British-airway-NLP-ML-predict/assets/137000188/6f6dca5b-d643-4b13-8fdd-b794071ab351)
+Additionally, a **word cloud** was generated to visualize frequently used words in the reviews.
 
 ---
 
-## 2. Customer Buying Behavior Prediction
+## 2. Predictive Modeling for Customer Buying Behavior
 ### Model Implementation
-A predictive model was developed to analyze the **factors influencing customer booking behavior**. The dataset was trained using:
+To understand factors influencing customer purchases, we trained a predictive model using:
 - **Random Forest Classifier**
 - **XGBoost Classifier**
 
 ### Model Performance
-The highest achieved scores:
 - **Accuracy:** 85.09%
-- **AUC Score:** 0.543 (Requires improvement)
+- **AUC Score:** 0.543 *(needs improvement)*
 
-### Key Features Impacting Customer Booking Behavior:
+### Key Features Impacting Customer Buying Behavior:
 - **Booking Origin:** Australia, Malaysia, Taiwan
 - **Top Routes:** SBWTPE, BKICN
 
-![Model Implementation](https://github.com/slashhsu/British-airway-NLP-ML-predict/assets/137000188/cd738115-12eb-4de7-8001-c9a3e53ebbb9)
+---
+
+## 3. Key Insights
+📌 **Sentiment analysis shows a balance between positive and negative reviews.**
+📌 **Slightly more subjective reviews than objective ones.**
+📌 **Customer booking behavior is significantly influenced by country of origin and specific routes.**
+📌 **AUC score improvement is needed for better predictive performance.**
 
 ---
 
-## 3. Model Performance
-Each model was evaluated using key performance metrics:
-- **Accuracy** – Measures overall classification performance.
-- **Precision & Recall** – Evaluates model sensitivity.
-- **F1-Score** – Balances precision and recall.
-- **Confusion Matrix** – Provides insights into false positives and false negatives.
-
-The **deep learning model (LSTM)** demonstrated the highest accuracy for sentiment classification, while Random Forest and XGBoost provided insights into customer booking behavior.
-
-![Model Performance](https://github.com/slashhsu/British-airway-NLP-ML-predict/assets/137000188/f455bf39-29ee-4145-8519-b09d784c14f7)
-
----
-
-## 4. Key Insights
-📌 **Customer sentiment is nearly balanced between positive and negative**
-📌 **Objective reviews slightly outnumber subjective ones**
-📌 **Booking origin and travel routes significantly influence customer purchasing behavior**
-📌 **Deep learning models perform well for sentiment analysis, while tree-based models are effective for booking prediction**
-
-![Key Insights](https://github.com/slashhsu/British-airway-NLP-ML-predict/assets/137000188/83c839e2-dae0-472a-984a-261000666440)
-
----
-
-## 5. Future Work
+## 4. Future Work
+🔹 **Enhance AUC score with hyperparameter tuning and additional features.**
+🔹 **Experiment with advanced NLP models like BERT for sentiment analysis.**
+🔹 **Develop a real-time dashboard for tracking customer sentiment and behavior.**
 🔹 **Improve the AUC score of the predictive model**
 🔹 **Explore advanced NLP techniques like BERT for sentiment classification**
 🔹 **Develop a real-time sentiment and booking prediction dashboard**
