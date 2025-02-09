@@ -51,13 +51,3 @@ To understand factors influencing customer purchases, we trained a predictive mo
 📌 **Customer booking behavior is significantly influenced by country of origin and specific routes.**
 📌 **AUC score improvement is needed for better predictive performance.**
 
----
-
-## 4. Future Work
-🔹 **Enhance AUC score with hyperparameter tuning and additional features.**
-🔹 **Experiment with advanced NLP models like BERT for sentiment analysis.**
-🔹 **Develop a real-time dashboard for tracking customer sentiment and behavior.**
-🔹 **Improve the AUC score of the predictive model**
-🔹 **Explore advanced NLP techniques like BERT for sentiment classification**
-🔹 **Develop a real-time sentiment and booking prediction dashboard**
-🔹 **Expand the dataset to cover a broader range of customer feedback**
